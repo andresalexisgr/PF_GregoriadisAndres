@@ -1,0 +1,127 @@
+.main {
+	grid-area: main;
+	background-color: #31525F;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	.publicidad {
+		display: flex;
+		position: relative;
+		width: 100%;
+		height: 20rem;
+		text-align: center;
+		background-image: url(../Assets/Images/images_project/film.gif);
+		background-position: center;
+		background-repeat: repeat;
+		align-items: center;
+		justify-items: center;
+		border-bottom: #E5C366 solid 5px;
+	}
+	.producto {
+		width: 21.875rem;
+		height: 21.875rem;
+		text-align: center;
+		line-height: 2.5rem;
+		margin: 3.125rem 3.125rem 3.125rem 3.125rem;
+		border-radius: 10%;
+		padding: auto;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-content: center;
+		.descripcion_producto {
+			.boton_comprar {
+				display: flex;
+			}
+		}
+	}
+	.producto1 {
+		background-color: #E5C366;
+		opacity: 89%;
+		padding: auto;
+		text-align: center;
+		transition: all 0.5s;
+		a {
+			color: #31525F;
+			text-decoration: none;
+		}
+		&:hover {
+			background-color: #E5C366;
+			opacity: 100%;
+			transform: scale(1.1,1.1);
+		}
+		.descripcion_producto {
+			display: flex;
+			flex-wrap: wrap;
+			overflow: auto;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.producto1_image {
+		display: block;
+		width: 15.625rem;
+		height: 15.625rem;
+		margin: auto;
+		margin-top: 40px;
+		margin-bottom: -30px;
+		padding: 0px auto;
+	}
+	.producto1_descripcion {
+		width: 100%;
+		height: 100px;
+		line-height: 40px;
+		display: absolute;
+	}
+	.review {
+		.review1 {
+			background-color: #111D25;
+			height: 21.875rem;
+			width: auto;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 50px;
+			margin: 20px;
+			line-height: 2rem;
+			justify-content: center;
+			border-radius: 2%;
+			display: inline-block;
+			text-align: center;
+			justify-content: center;
+		}
+	}
+	.review1 {
+		transition: all 0.5s;
+		&:hover {
+			background-color: #E5C366;
+			opacity: 100%;
+			transform: scale(1.1,1.1);
+		}
+	}
+}
+.container {
+	.main {
+		.review {
+			color: #E5C366;
+			height: 80%;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 0;
+			margin: 0;
+			line-height: 2rem;
+			border-radius: 0%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}

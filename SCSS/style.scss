@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "header_nav_body";
+@import "main";
+@import "footer";
+@import "form";
+@import "responsive";

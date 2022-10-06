@@ -1,0 +1,161 @@
+/*Adaptacion Responsive Mobile*/
+
+@media only screen and (max-width: 599px) {
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 0.1fr 3fr 0.2fr;
+	grid-auto-columns: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "header"
+      "nav"
+      "main"
+      "footer";
+	font-family: 'Roboto Mono', monospace, sans-serif;
+	background-color: #111D25;
+	text-transform: uppercase;
+	height: 100%;
+	width: 100%;
+}
+.header .info_header, .login {
+	display: none;
+}
+.nav {
+	.menu {
+		.item {
+			width: 50%;
+			display: flexbox;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			text-align: center;
+			margin-left: 50px;
+		}
+	}
+}
+svg {
+	margin-left: 150px;
+}
+.main {
+	grid-area: main;
+	background-color: #31525F;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: space-between;
+}
+.footer {
+	.seccionf1 {
+		margin-left: 10px;
+		margin-right: 0;
+		padding: 0;
+		height: 50%;
+		width: 90%;
+		display: flexbox;
+		flex-direction: column;
+		flex-wrap: wrap;
+		font-size: 1.5rem;
+	}
+}
+}
+
+
+
+/*Adaptacion Responsive Desktop*/
+ 
+ @media only screen and (min-width: 900px) {
+    .container {  display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 0.1fr 0.1fr 3fr 0.2fr;
+       grid-auto-columns: 1fr;
+       gap: 0px 0px;
+       grid-auto-flow: row;
+       grid-template-areas:
+         "header"
+         "nav"
+         "main"
+         "footer";
+       font-family: 'Roboto Mono', monospace, sans-serif;
+       background-color: #111D25;
+       text-transform: uppercase;
+       height: 100%;
+       width: 100%;
+     }
+   
+    
+/*Adaptacion mobile form*/
+
+@media only screen and (max-width: 599px) {
+     .body_form .info_header, .login {
+        display: none;
+    }
+    .body_form {
+        .menu {
+            .item {
+                width: 100%;
+                display: flexbox;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                text-align: center;
+                margin-left: 50px;
+            }
+        }
+        .main {
+            grid-area: main;
+            background-color: #31525F;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: space-between;
+        }
+    }
+    svg {
+        margin-left: 50px;
+     }
+    }
+ }
+
+
+ /*Adaptacion Responsive Tablet y otros*/
+
+@media only screen and (max-width: 899px) {
+
+    .body_form .info_header, .login {
+        display: none;
+    }
+    #form1 {
+        width: 90%;
+    }
+    .body_form {
+        .menu {
+            .item {
+                width: 50%;
+                display: flexbox;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                text-align: center;
+                margin-left: 50px;
+            }
+        }
+        .main {
+            grid-area: main;
+            background-color: #31525F;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: space-between;
+        }
+    }
+    svg {
+        margin-left: 50px;
+    }
+}

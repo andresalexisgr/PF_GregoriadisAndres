@@ -1,0 +1,49 @@
+.footer {
+	grid-area: footer;
+	background-color: #111D25;
+	color: #E5C366;
+	height: 23.125rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0px;
+	margin: 0px;
+	line-height: 2rem;
+	border-radius: 0%;
+	.decoration {
+		background-color: #D84C4C;
+		color: #E5C366;
+		height: 8px;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 0px;
+		margin: 0px;
+		line-height: 2rem;
+		border-radius: 0%;
+	}
+	.seccionf1 {
+		background-color: #111D25;
+		color: #E5C366;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 50px;
+		margin: 5px;
+		margin-right: 80px;
+		line-height: 1.8rem;
+		border-radius: 0%;
+		display: inline-block;
+		text-align: left;
+		a {
+			color: #E5C366;
+			text-decoration: none;
+		}
+		h3 {
+			text-decoration: underline;
+		}
+	}
+}
