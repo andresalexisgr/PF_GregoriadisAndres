@@ -426,6 +426,8 @@ svg {
 
 /*Adaptacion Responsive Mobile*/
 @media only screen and (max-width: 599px) {
+  html body {
+    font-size: 1rem; }
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -441,7 +443,8 @@ svg {
     background-color: #111D25;
     text-transform: uppercase;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    font-size: 1.2rem; }
   .header .info_header, .login {
     display: none; }
   .nav .menu .item {
@@ -453,7 +456,18 @@ svg {
     text-align: center;
     margin-left: 50px; }
   svg {
-    margin-left: 150px; }
+    margin-left: 90px;
+    width: 65%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: 90px;
+    padding: 0px;
+    align-content: left; }
+    svg text {
+      font-size: 2.5rem;
+      text-align: left; }
   .main {
     grid-area: main;
     background-color: #31525F;
@@ -463,16 +477,19 @@ svg {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: space-between; }
-  .footer .seccionf1 {
-    margin-left: 10px;
-    margin-right: 0;
-    padding: 0;
-    height: 50%;
-    width: 90%;
-    display: flexbox;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 1.5rem; } }
+  .footer {
+    height: 100%; }
+    .footer .seccionf1 {
+      margin-left: 10px;
+      margin-right: 0;
+      padding: 0;
+      width: 90%;
+      height: auto;
+      display: flexbox;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 1.1rem; } }
 
 /*Adaptacion Responsive Desktop*/
 @media only screen and (min-width: 900px) {
@@ -492,6 +509,8 @@ svg {
     text-transform: uppercase;
     height: 100%;
     width: 100%; }
+  html body {
+    font-size: 1rem; }
   /*Adaptacion mobile form*/ }
 
 @media only screen and (min-width: 900px) and (max-width: 599px) {
@@ -515,10 +534,22 @@ svg {
     justify-content: space-evenly;
     align-content: space-between; }
   svg {
-    margin-left: 50px; } }
+    width: 65%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0px;
+    align-content: left; }
+    svg text {
+      font-size: 1rem; } }
 
-/*Adaptacion Responsive Tablet y otros*/
-@media only screen and (max-width: 899px) {
+@media only screen and (min-width: 900px) {
+  html body {
+    font-size: 1rem; }
+  /*Adaptacion Responsive Tablet y otros*/ }
+
+@media only screen and (min-width: 900px) and (max-width: 899px) {
   .body_form .info_header, .login {
     display: none; }
   #form1 {
@@ -530,7 +561,8 @@ svg {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin-left: 50px; }
+    margin-left: 50px;
+    background-color: antiquewhite; }
   .body_form .main {
     grid-area: main;
     background-color: #31525F;
@@ -541,4 +573,14 @@ svg {
     justify-content: space-evenly;
     align-content: space-between; }
   svg {
-    margin-left: 50px; } }
+    width: 65%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0px;
+    align-content: left; }
+    svg text {
+      font-size: 1.5rem; }
+  html body {
+    font-size: 1rem; } }
